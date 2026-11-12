@@ -8,12 +8,12 @@ declare(strict_types=1);
 |--------------------------------------------------------------------------
 */
 
-$host = '127.0.0.1';
-$port = '3306';
-$dbname = 'larry_clothing_and_printing';
+$host = getenv('DB_HOST') ?: '127.0.0.1';
+$port = getenv('DB_PORT') ?: '3306';
+$dbname = getenv('DB_NAME') ?: 'larry_clothing_and_printing';
 
-$dbUsername = 'root';
-$dbPassword = '';
+$dbUsername = getenv('DB_USER') ?: 'root';
+$dbPassword = getenv('DB_PASSWORD') ?: '';
 
 $charset = 'utf8mb4';
 
@@ -42,7 +42,6 @@ try {
     );
 
     die(
-        'Database connection failed. '
-        . 'Please make sure MySQL is running in XAMPP.'
+        'Database connection failed. Please contact the administrator.'
     );
 }
