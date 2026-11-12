@@ -4,4 +4,4 @@
 .vscode
 tests
 database
-aiven-ca.pem
+db-ca.pem
