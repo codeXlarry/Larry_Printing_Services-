@@ -1,0 +1,284 @@
+/* =========================================================
+   LARRY CLOTHING & PRINTING
+   GLOBAL FOOTER
+========================================================= */
+
+.site-footer {
+    width: 100%;
+
+    margin-top: 70px;
+
+    background: #f5f5f7;
+
+    border-top:
+        1px solid rgba(0, 0, 0, 0.06);
+
+    color: #1d1d1f;
+
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.footer-container {
+    width:
+        min(
+            1080px,
+            calc(100% - 40px)
+        );
+
+    margin: 0 auto;
+
+    padding:
+        48px 0 24px;
+}
+
+
+/* =========================================================
+   TOP AREA
+========================================================= */
+
+.footer-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.footer-brand {
+    max-width: 360px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+}
+
+
+.footer-logo {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    color: #111;
+
+    background: #e2a13b;
+
+    font-size: 18px;
+
+    font-weight: 900;
+}
+
+
+.footer-brand strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #1d1d1f;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.footer-brand p {
+    margin: 0;
+
+    color: #6e6e73;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.footer-links {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(100px, 1fr));
+
+    gap: 50px;
+}
+
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+.footer-column h4 {
+    margin:
+        0 0 5px;
+
+    color: #1d1d1f;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.footer-column a {
+    color: #6e6e73;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.footer-column a:hover {
+    color: #000;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.footer-divider {
+    height: 1px;
+
+    margin:
+        36px 0 20px;
+
+    background:
+        rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   BOTTOM AREA
+========================================================= */
+
+.footer-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #86868b;
+
+    font-size: 11px;
+}
+
+
+.footer-bottom-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.footer-bottom-links a {
+    color: #6e6e73;
+
+    text-decoration: none;
+
+    font-size: 11px;
+}
+
+
+.footer-bottom-links a:hover {
+    color: #000;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+
+    .footer-links {
+        width: 100%;
+
+        gap: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .footer-container {
+        width:
+            calc(100% - 28px);
+
+        padding:
+            36px 0 20px;
+    }
+
+
+    .footer-links {
+        grid-template-columns: 1fr;
+
+        gap: 24px;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}

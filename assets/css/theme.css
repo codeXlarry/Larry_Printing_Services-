@@ -1,0 +1,474 @@
+/* =========================================================
+   LARRY CLOTHING & PRINTING
+   GLOBAL LIGHT / DARK THEME
+========================================================= */
+
+
+/* =========================================================
+   THEME ICON BUTTON
+========================================================= */
+
+.header-theme-toggle {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    color: #1d1d1f;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.header-theme-toggle:hover {
+    background:
+        rgba(0, 0, 0, 0.06);
+}
+
+
+.header-theme-toggle:active {
+    transform: scale(0.94);
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.theme-svg {
+    width: 18px;
+    height: 18px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+}
+
+
+.sun-icon {
+    display: none;
+}
+
+
+.moon-icon {
+    display: block;
+}
+
+
+/* =========================================================
+   LIGHT MODE
+========================================================= */
+
+html {
+    color-scheme: light;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+html.dark-theme {
+    color-scheme: dark;
+
+    background: #0d0d0f;
+}
+
+
+/* =========================================================
+   SWITCH ICONS
+========================================================= */
+
+html.dark-theme .moon-icon {
+    display: none;
+}
+
+
+html.dark-theme .sun-icon {
+    display: block;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+html.dark-theme body {
+    color: #f5f5f7;
+
+    background: #0d0d0f;
+}
+
+
+html.dark-theme body.dashboard-page {
+    background:
+        linear-gradient(
+            180deg,
+            #0d0d0f 0%,
+            #151517 100%
+        );
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+html.dark-theme .site-header {
+    background:
+        rgba(24, 24, 26, 0.9);
+
+    border-bottom-color:
+        rgba(255, 255, 255, 0.08);
+}
+
+
+html.dark-theme .site-brand,
+html.dark-theme .site-brand-text,
+html.dark-theme .nav-link,
+html.dark-theme .signin-link {
+    color: #f5f5f7;
+}
+
+
+html.dark-theme .nav-link:hover {
+    color: #ffffff;
+}
+
+
+html.dark-theme
+.header-theme-toggle {
+    color: #f5f5f7;
+}
+
+
+html.dark-theme
+.header-theme-toggle:hover {
+    background:
+        rgba(255, 255, 255, 0.1);
+}
+
+
+/* =========================================================
+   ACCOUNT BUTTON
+========================================================= */
+
+html.dark-theme .user-avatar {
+    color: #111;
+
+    background: #f5f5f7;
+}
+
+
+/* =========================================================
+   ACCOUNT DROPDOWN
+========================================================= */
+
+html.dark-theme .user-dropdown {
+    border-color:
+        rgba(255, 255, 255, 0.08);
+
+    background:
+        rgba(31, 31, 34, 0.98);
+
+    box-shadow:
+        0 18px 50px
+        rgba(0, 0, 0, 0.5);
+}
+
+
+html.dark-theme
+.user-dropdown-header strong {
+    color: #f5f5f7;
+}
+
+
+html.dark-theme
+.user-dropdown-header span {
+    color: #9c9ca1;
+}
+
+
+html.dark-theme .dropdown-divider {
+    background:
+        rgba(255, 255, 255, 0.08);
+}
+
+
+html.dark-theme .dropdown-item {
+    color: #f5f5f7;
+}
+
+
+html.dark-theme
+.dropdown-item:hover {
+    background:
+        rgba(255, 255, 255, 0.07);
+}
+
+
+html.dark-theme
+.dropdown-logout {
+    color: #ff6961;
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+html.dark-theme .mobile-nav {
+    background:
+        rgba(24, 24, 26, 0.98);
+}
+
+
+html.dark-theme .mobile-nav a {
+    color: #f5f5f7;
+}
+
+
+html.dark-theme
+.mobile-menu-button span {
+    background: #f5f5f7;
+}
+
+
+html.dark-theme
+.mobile-nav-divider {
+    background:
+        rgba(255, 255, 255, 0.09);
+}
+
+
+html.dark-theme
+.mobile-user strong {
+    color: #f5f5f7;
+}
+
+
+html.dark-theme
+.mobile-user small {
+    color: #98989d;
+}
+
+
+/* =========================================================
+   WELCOME CARD
+========================================================= */
+
+html.dark-theme .welcome-card {
+    color: #f5f5f7;
+
+    border-color:
+        rgba(255, 255, 255, 0.07);
+
+    background:
+        #1d1d1f;
+
+    box-shadow:
+        0 15px 45px
+        rgba(0, 0, 0, 0.28);
+}
+
+
+html.dark-theme
+.welcome-card h1 {
+    color: #f5f5f7;
+}
+
+
+html.dark-theme
+.welcome-card > p {
+    color: #a1a1a6;
+}
+
+
+html.dark-theme
+.dashboard-label {
+    color: #e8a33c;
+}
+
+
+/* =========================================================
+   SUMMARY CARDS
+========================================================= */
+
+html.dark-theme .summary-item {
+    border-color:
+        rgba(255, 255, 255, 0.04);
+
+    background: #29292c;
+}
+
+
+html.dark-theme
+.summary-item span {
+    color: #98989d;
+}
+
+
+html.dark-theme
+.summary-item strong {
+    color: #f5f5f7;
+}
+
+
+html.dark-theme
+.summary-item .active-text {
+    color: #4bd275;
+}
+
+
+/* =========================================================
+   DASHBOARD MAIN CARD
+========================================================= */
+
+html.dark-theme
+.dashboard-main-card {
+    border-color:
+        rgba(255, 255, 255, 0.07);
+
+    background:
+        #1d1d1f;
+}
+
+
+html.dark-theme
+.dashboard-main-card h2 {
+    color: #f5f5f7;
+}
+
+
+html.dark-theme
+.dashboard-main-card p {
+    color: #a1a1a6;
+}
+
+
+html.dark-theme
+.dashboard-main-icon {
+    color: #ffc15c;
+
+    background:
+        #3b2a13;
+}
+
+
+/* =========================================================
+   DASHBOARD BUTTONS
+========================================================= */
+
+html.dark-theme
+.dashboard-action-primary {
+    color: #111111;
+
+    background: #f5f5f7;
+}
+
+
+html.dark-theme
+.dashboard-action-secondary {
+    border-color: #46464a;
+
+    color: #f5f5f7;
+
+    background: #29292c;
+}
+
+
+html.dark-theme
+.dashboard-action-secondary:hover {
+    background: #343438;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+html.dark-theme .site-footer {
+    color: #f5f5f7;
+
+    background: #161618;
+
+    border-top-color:
+        rgba(255, 255, 255, 0.08);
+}
+
+
+html.dark-theme
+.footer-brand strong,
+html.dark-theme
+.footer-column h4 {
+    color: #f5f5f7;
+}
+
+
+html.dark-theme
+.footer-brand p,
+html.dark-theme
+.footer-column a,
+html.dark-theme
+.footer-bottom p,
+html.dark-theme
+.footer-bottom-links a {
+    color: #98989d;
+}
+
+
+html.dark-theme
+.footer-column a:hover,
+html.dark-theme
+.footer-bottom-links a:hover {
+    color: #ffffff;
+}
+
+
+html.dark-theme
+.footer-divider {
+    background:
+        rgba(255, 255, 255, 0.09);
+}
+
+
+/* =========================================================
+   SMOOTH TRANSITION
+========================================================= */
+
+body,
+.site-header,
+.site-footer,
+.welcome-card,
+.dashboard-main-card,
+.summary-item,
+.dashboard-action-primary,
+.dashboard-action-secondary {
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
