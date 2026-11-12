@@ -25,6 +25,13 @@ $options = [
     PDO::ATTR_EMULATE_PREPARES   => false
 ];
 
+$sslCa = getenv('DB_SSL_CA');
+
+if ($sslCa !== false && $sslCa !== '') {
+    $options[PDO::MYSQL_ATTR_SSL_CA] = $sslCa;
+    $options[PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT] = true;
+}
+
 try {
 
     $pdo = new PDO(
